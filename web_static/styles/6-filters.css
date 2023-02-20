@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+.container .filters {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+   align-items: stretch;
+  justify-content: center;
+  z-index: auto;
+}
+
+.container .filters .locations {
+    height: 100%;
+    width: 25%;
+    border-right: 1px double #DDDDDD;
+    }
+
+.container .filters .amenities {
+    height: 100%;
+    width: 25%;
+  }
+
+.container .filters button {
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: 0;
+    border-radius: 4px;
+    margin: auto 30px auto auto;
+    position: relative;
+    }
+
+.container .filters button:hover {
+    opacity: 90%;
+}
+
+
+.filters h3 {
+    font-weight: 600;
+    /*padding-left: 30px;*/
+    margin: 12px 0 4px 40px;
+}
+
+.container .filters h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 7px 0 3px 40px;
+
+}
+
+
+.container .filters .popover {
+    list-style-type: none;
+    background-color: #Fafafa;
+    border-radius: 4px  0 4px 4px;
+    border: 1px solid #DDDDDD;
+    /*margin-top: -2px;*/
+    display: none;
+    padding: 30px 40px 40px 30px;
+	margin: 16px -1px 0 -1px;
+}
+
+.container .filters .amenities .popover {
+margin-right: 0;
+border-radius: 0 0 4px 4px ;
+}
+
+.container .filters .popover ul{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.container .filters .popover li {
+	margin: 5px 0 5px 0;
+}
+
+.container .filters .locations .popover h2 {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+
+}
+
+.container .filters .locations:hover .popover {
+	display: list-item;
+}
+
+.container .filters .amenities:hover .popover {
+	display: list-item;
+}
+
+/*.container .filters .amenities {
+    background-color: #FF5A5F;
+}
+.container .filters .locations {
+    background-color: #FF5A5F;
+}*/
+
+@media screen and (max-width: 600px) {
+
+	.container .filters {
+		flex-direction: column;
+		height: auto;
+		width: 90%;
+		margin: auto;
+	}
+
+	.container .filters .locations {
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	.container .filters .locations,
+	.container .filters .amenities {
+		width: 100%;
+		border-right: none;
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	.container .filters button {
+		width: 80%;
+		margin: 5px auto;
+	}
+
+}
